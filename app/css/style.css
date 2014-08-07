@@ -20,84 +20,84 @@
   font-style: normal
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 
-
 html {
-  font: 400 75%/1.5 'Source Sans Pro', sans-serif;
-  color: white;
+  font: 400 100%/1.5 'Source Sans Pro', sans-serif;
+  color: black;
+}
+head, body {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border: 13px solid #75fe04;
+}
+
+
+
+html::before, html::after {
+  white-space: pre;
+  position: absolute;
+  padding: 2.5em;
+  width: 100%;
 }
 html::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 48px;
-  width: 44px;
-  height: 38px;
-  background: url(http://cdn2.testdouble.com/img/home-logo-73d7afa00c7929e810d84c043254b51a.png) no-repeat 0 0;
+  content: "Writing nice code since 2011.\A We're Test Double. It's nice to meet you.";
+  bottom: 0;
+  color: white;
 }
 html::after {
-  content: "We like to write nice code.\AYou look great today.";
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  margin-top: -50px;
-  font: 300 italic 30px/35px 'Source Sans Pro', sans-serif;
-  text-align: center;
-  white-space: pre;
-}
-html::first-line {
-  font: 300 normal 30px/35px 'Source Sans Pro', sans-serif;
+  content: "614.349.4279\A hello@testdouble.com";
+  bottom: -100%;
+  text-align: right;
 }
 
 
 
 head {
-  display: block;
-  height: 100%;
-  width: 100%;
   background: white url(http://cdn2.testdouble.com/img/home-bg@2x-9327f93692221bea6a2137b4ed2b1c7f.jpg) 0 0 / cover no-repeat;
-  border: 13px solid #75fe04;
-
-  white-space: pre;
-  font: 600 1.25em 'Source Sans Pro', sans-serif;
+}
+head::before, head::after {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 76px;
+  background: transparent 100% 100% no-repeat;
 }
 head::before {
-  content: "Writing nice code since 2011.\A We're Test Double. It's nice to meet you.";
-  position: absolute;
-  bottom: 2.5em;
-  left: 2.25em;
+  background-image: url(http://cdn2.testdouble.com/img/home-logo-73d7afa00c7929e810d84c043254b51a.png);
+}
+head::after {
+  top: 100%;
+  background-image: url(http://cdn2.testdouble.com/img/logo-170b3d0d9adc03957b62e64abb7587c0.png);
 }
 
 
 
 body {
-  position: relative;
-  height: -webkit-min-content;
-  color: black;
-  border: 13px solid #75fe04;
-  border-top-width: 1px;
-  margin: 0;
-  box-sizing: content-box;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.85em;
 }
-body::before {
-  content: "We develop apps. Great ones that in a beautifully simple way solve complex business problems. That's what makes Test Double special. Well, that and the fact that we're quite friendly and have a knack for building great partnerships.";
+body::before, body::after {
   display: block;
   position: relative;
-  font: 300 3em 'Source Sans Pro';
-  text-align: center;
-  margin: 2.5em;
+  margin: auto 10%;
+}
+body::first-line {
+  font-style: normal;
+}
+body::before {
+  content: "We like to write nice code.\AYou look great today.";
+  top: 25%;
+  font-style: italic;
+  white-space: pre;
 }
 body::after {
-  content: "614.349.4279\A hello@testdouble.com\A Columbus, Ohio";
-  white-space: pre;
-  position: absolute;
-  bottom: 2.5em;
-  right: 2.25em;
-  text-align: right;
-  color: black;
+  content: "We develop apps. Great ones that in a beautifully simple way solve complex business problems. That's what makes Test Double special. Well, that and the fact that we're quite friendly and have a knack for building great partnerships.";
+  top: 50%;
 }
