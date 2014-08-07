@@ -1,4 +1,96 @@
-.hello {
-  background-color: #efefef;
-  border: 1px solid #dedede;
+http://cdn2.testdouble.com/webfonts/sourcesanspro-regular-webfont-3f729ea25827ae4d0cfc30f133d436d9.woff
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(http://cdn2.testdouble.com/webfonts/sourcesanspro-light-webfont-2609bf36c9ef4ab89f0ba2b407221027.eot);
+  src: url(http://cdn2.testdouble.com/webfonts/sourcesanspro-light-webfont-2609bf36c9ef4ab89f0ba2b407221027.eot?#iefix) format('embedded-opentype'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-light-webfont-f0773fcfa2abac9626fe2b8bc3ee0bb2.woff) format('woff'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-light-webfont-feafa7938a83a16d9bc09db697739c60.ttf) format('truetype'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-light-webfont-7d97796a246fb92e57090d5e824624ec.svg#source_sans_prolight) format('svg');
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(http://cdn2.testdouble.com/webfonts/sourcesanspro-regular-webfont-acbd8662312780844af53129bc333afc.eot);
+  src: url(http://cdn2.testdouble.com/webfonts/sourcesanspro-regular-webfont-acbd8662312780844af53129bc333afc.eot?#iefix) format('embedded-opentype'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-regular-webfont-3f729ea25827ae4d0cfc30f133d436d9.woff) format('woff'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-regular-webfont-6308938642e16eddc6144932170d4c5c.ttf) format('truetype'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-regular-webfont-7b39c122fb3d194b82385b2118a81031.svg#source_sans_proregular) format('svg');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(http://cdn2.testdouble.com/webfonts/sourcesanspro-semibold-webfont-afe9a790a28d6eff8c31295c01d914f0.eot);
+  src: url(http://cdn2.testdouble.com/webfonts/sourcesanspro-semibold-webfont-afe9a790a28d6eff8c31295c01d914f0.eot?#iefix) format('embedded-opentype'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-semibold-webfont-141b11174ec1a1ba2becd5663ca4ee07.woff) format('woff'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-semibold-webfont-573137be2a30bf62db0a83edadd5b7d9.ttf) format('truetype'), url(http://cdn2.testdouble.com/webfonts/sourcesanspro-semibold-webfont-f552149f7f156c98f4d11401791b1577.svg#source_sans_proregular) format('svg');
+  font-weight: 600;
+  font-style: normal
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  background: white url(http://cdn2.testdouble.com/img/home-bg@2x-9327f93692221bea6a2137b4ed2b1c7f.jpg) 0 0 / cover no-repeat;
+  color: black;
+  border: 13px solid #75fe04;
+  font: 400 12px/1.5 'Source Sans Pro', sans-serif;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  width: 44px;
+  height: 38px;
+  background: url(http://cdn2.testdouble.com/img/home-logo-73d7afa00c7929e810d84c043254b51a.png) no-repeat 0 0;
+}
+
+html::after {
+  content: "We like to write nice code.\AYou look great today.";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -50px;
+  color: white;
+  font: 300 italic 30px/35px 'Source Sans Pro', sans-serif;
+  text-align: center;
+  white-space: pre;
+}
+html::first-line {
+  color: white;
+  font: 300 normal 30px/35px 'Source Sans Pro', sans-serif;
+}
+
+head {
+  display: block;
+  white-space: pre;
+  color: white;
+  font: 600 15px/1.5 'Source Sans Pro', sans-serif;
+  height: 0;
+  width: 0;
+}
+
+head::before {
+  content: "Writing nice code since 2011.\A We're Test Double. It's nice to meet you.";
+  position: absolute;
+  bottom: 2.5em;
+  left: 2.25em;
+}
+
+head::after {
+  content: "614.349.4279\A hello@testdouble.com\A Columbus, Ohio";
+  white-space: pre;
+  position: absolute;
+  bottom: 2.5em;
+  right: 2.25em;
+  text-align: right;
+  /* text-shadow: black 0 0 3px; */
+  color: black;
+}
+
+
+
+body::after {
+  content: "We develop apps. Great ones that in a beautifully simple way solve complex business problems. That's what makes Test Double special. Well, that and the fact that we're quite friendly and have a knack for building great partnerships.";
 }
