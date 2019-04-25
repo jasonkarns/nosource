@@ -59,7 +59,7 @@ html::after {
 
 
 head {
-  background: white url(http://cdn2.testdouble.com/img/home-bg@2x-9327f93692221bea6a2137b4ed2b1c7f.jpg) 0 0 / cover no-repeat;
+  background: white url(https://cdn2.testdouble.com/img/home-bg-7e76866d8e4b41afc2d40ab0906244fa.jpg) 0 0 / cover no-repeat;
 }
 head::before, head::after {
   content: "";
@@ -69,11 +69,11 @@ head::before, head::after {
   background: transparent 100% 100% no-repeat;
 }
 head::before {
-  background-image: url(http://cdn2.testdouble.com/img/home-logo-73d7afa00c7929e810d84c043254b51a.png);
+  background-image: url(https://cdn2.testdouble.com/img/logo-f223aca4482d7eb411caeec4cc6e6e0d.svg);
 }
 head::after {
   top: 100%;
-  background-image: url(http://cdn2.testdouble.com/img/logo-170b3d0d9adc03957b62e64abb7587c0.png);
+  background-image: url(https://cdn2.testdouble.com/img/logo-f223aca4482d7eb411caeec4cc6e6e0d.svg);
 }
 
 
