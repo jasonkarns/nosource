@@ -43,6 +43,6 @@ module.exports = lineman => ({
   //
   // enableAssetFingerprint: true
   removeTasks: {
-    common: "jshint"
+    common: [ "coffee", "concat_sourcemap", "handlebars", "jshint", "jst", "pages", "webfonts" ]
   }
 })
