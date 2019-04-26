@@ -6,7 +6,8 @@
   "author": "Jason Karns",
   "scripts": {
     "start": "lineman run",
-    "test": "lineman spec-ci"
+    "test": "lineman spec-ci",
+    "prepare": "lineman build"
   },
   "engines": {
     "node": ">=0.10.36"
