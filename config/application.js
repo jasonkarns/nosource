@@ -42,7 +42,11 @@ module.exports = lineman => ({
   // via grunt-asset-fingerprint
   //
   // enableAssetFingerprint: true
+  prependTasks: {
+    common: "concat_sourcemap:css"
+  },
   removeTasks: {
-    common: [ "coffee", "concat_sourcemap", "handlebars", "jshint", "jst", "pages", "webfonts" ]
+    common: [ "coffee", "concat_sourcemap", "handlebars", "jshint", "jst", "pages", "webfonts" ],
+    dist: "uglify"
   }
 })
