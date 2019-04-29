@@ -1,0 +1,8 @@
+{
+  "root": "dist",
+  "headers": {
+    "/": {
+      "Link": "<css/app.css>;rel=stylesheet"
+    }
+  }
+}

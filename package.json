@@ -1,12 +1,13 @@
 {
   "name": "nosource",
-  "description": "An HTML/JS/CSS app",
+  "description": "An site without source!",
   "version": "0.0.1",
   "private": true,
   "author": "Jason Karns",
   "scripts": {
     "start": "lineman run",
-    "test": "lineman spec-ci"
+    "test": "lineman spec-ci",
+    "prepare": "lineman build"
   },
   "engines": {
     "node": ">=0.10.36"
