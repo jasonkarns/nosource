@@ -59,7 +59,7 @@ html::after {
 
 
 head {
-  background: white url(img/home-bg.jpg) 0 0 / cover no-repeat;
+  background: white url(/img/home-bg.jpg) 0 0 / cover no-repeat;
 }
 head::before, head::after {
   content: "";
@@ -69,11 +69,11 @@ head::before, head::after {
   background: transparent 100% 100% no-repeat;
 }
 head::before {
-  background-image: url(img/logo.png);
+  background-image: url(/img/logo.png);
 }
 head::after {
   top: 100%;
-  background-image: url(img/logo.png);
+  background-image: url(/img/logo.png);
 }
 
 
