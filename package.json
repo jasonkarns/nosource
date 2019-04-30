@@ -13,6 +13,7 @@
     "node": ">=0.10.36"
   },
   "devDependencies": {
-    "lineman": "^0.36.3"
+    "lineman": "^0.36.3",
+    "testdouble-style": "github:testdouble/style"
   }
 }
