@@ -1,0 +1,33 @@
+{
+  "name": "nosource",
+  "description": "An site without source!",
+  "env": {
+    "GITHUB_AUTH_TOKEN": {
+      "description": "Personal Access Token for private github repo access via netrc buildpack"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-github-netrc.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static.git"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "npm test"
+      }
+    }
+  }
+}
