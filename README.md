@@ -1,4 +1,6 @@
-# My Lineman Application
+# Fathomless Springs
+
+An experiment in minimal HTML.
 
 1. Visit http://fathomless-springs.herokuapp.com/ in firefox.
 2. View Source
