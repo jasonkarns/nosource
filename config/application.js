@@ -17,7 +17,11 @@ module.exports = lineman => ({
   },
 
   removeTasks: {
-    common: [ "coffee", "concat_sourcemap", "handlebars", "jshint", "jst", "pages", "webfonts" ],
+    common: [ "coffee", "concat_sourcemap", "handlebars", "jshint", "jst", "pages" ],
     dist: "uglify"
+  },
+
+  webfonts: {
+    files: "<%= files.webfonts.files %>"
   }
 })

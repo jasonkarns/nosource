@@ -6,4 +6,10 @@
  *   - https://github.com/linemanjs/lineman/blob/master/config/files.coffee
  */
 module.exports = lineman => ({
+  webfonts: {
+    files: {
+      "node_modules/testdouble-style/webfonts": "node_modules/testdouble-style/webfonts/**/*.*",
+      "vendor/webfonts/": "vendor/webfonts/**/*.*"
+    }
+  }
 })
