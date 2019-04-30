@@ -1,7 +1,7 @@
 {
   "name": "nosource",
   "description": "An site without source!",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "author": "Jason Karns",
   "scripts": {
