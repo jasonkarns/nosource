@@ -21,6 +21,10 @@ module.exports = lineman => ({
     dist: "uglify"
   },
 
+  images: {
+    files: "<%= files.img.files %>"
+  },
+
   webfonts: {
     files: "<%= files.webfonts.files %>"
   }

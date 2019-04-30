@@ -12,6 +12,15 @@ module.exports = lineman => ({
       "vendor/css/**/*.css"
     ]
   },
+
+  img: {
+    files: {
+      "app/img": "app/img/**/*.*",
+      "vendor/img": "vendor/img/**/*.*",
+      "node_modules/testdouble-style/img": "node_modules/testdouble-style/img/**/*.*"
+    }
+  },
+
   webfonts: {
     files: {
       "node_modules/testdouble-style/webfonts": "node_modules/testdouble-style/webfonts/**/*.*",
