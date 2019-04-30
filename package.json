@@ -7,7 +7,9 @@
   "scripts": {
     "start": "lineman run",
     "test": "lineman spec-ci",
-    "prepare": "lineman build"
+    "prepare": "lineman build",
+    "predeploy": "npm install",
+    "deploy": "heroku static:deploy"
   },
   "engines": {
     "node": ">=0.10.36"
