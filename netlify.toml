@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Link =  "<css/app.css>;rel=stylesheet"
